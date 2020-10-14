@@ -22,6 +22,8 @@
         </p>
       </v-col>
 
+      <nuxt-link to="/test">NUXT LINK TO TEST</nuxt-link>
+
       <v-col
         v-for="component in exampleComponents"
         :key="component.__file"

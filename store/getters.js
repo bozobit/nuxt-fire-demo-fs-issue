@@ -5,5 +5,6 @@ export default {
     } catch {
       return false
     }
-  }
+  },
+  message: state => state.message
 }

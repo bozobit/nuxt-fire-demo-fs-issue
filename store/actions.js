@@ -50,5 +50,27 @@ export default {
       'Success. Nuxt-fire Objects can be accessed in store actions via this.$fire___'
     )
     return
-  }
+  },
+
+  async readMessage ({ commit }, messageId) {
+    console.log ('readMessage in store called')
+    const messageRef = this.$fireStore.collection('message').doc('message')
+    await messageRef.get()
+      .then((messageDoc) => {
+        if (messageDoc.exists) {
+          const messageObject = {
+            id: messageDoc.id,
+            messageText: messageDoc.data().message
+          }
+          console.log(messageObject)
+          commit('SET_MESSAGE', messageObject)
+        } else {
+          console.log('Message not found with id: ' + messageId)
+        }
+      })
+      .catch((errorMessage) => {
+        throw (errorMessage)
+      })
+  },
+
 }

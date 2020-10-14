@@ -64,16 +64,13 @@ export default () => {
     //Nuxt-Fire Module Options
     firebase: {
       config: {
-        apiKey: 'AIzaSyDa-YwgWTp2GDyVYEfv-XLb62100_HoEvU',
-        authDomain: 'nuxt-fire-demo.firebaseapp.com',
-        databaseURL: 'https://nuxt-fire-demo.firebaseio.com',
-        projectId: 'nuxt-fire-demo',
-        storageBucket: 'nuxt-fire-demo.appspot.com',
-        messagingSenderId: '807370470428',
-        appId: '1:807370470428:web:26da98c86c3fd352',
-        measurementId: 'G-XT6PVC1D4X',
-        fcmPublicVapidKey:
-          'BL_xoiuOe5vbb2vJkCNnuswn03NwCsyCkJUgRbuQA5tpg7J4E4z50MO8b-wrrad6fcysYAaFjHqU7D9o0oCWL8w'
+        apiKey: "AIzaSyDc1ee_Q3qk0iI0TY_ekVYkVvnNi13uPMQ",
+        authDomain: "nuxt-fire-demo-44331.firebaseapp.com",
+        databaseURL: "https://nuxt-fire-demo-44331.firebaseio.com",
+        projectId: "nuxt-fire-demo-44331",
+        storageBucket: "nuxt-fire-demo-44331.appspot.com",
+        messagingSenderId: "386042527414",
+        appId: "1:386042527414:web:8eb04f96a1f6d992407017"
       },
       onFirebaseHosting: false,
       services: {

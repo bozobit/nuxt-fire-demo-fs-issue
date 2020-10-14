@@ -10,5 +10,8 @@ export default {
       uid: authUser.uid,
       email: authUser.email
     }
-  }
+  },
+  SET_MESSAGE (state, message) {
+    state.message = message
+  },
 }
